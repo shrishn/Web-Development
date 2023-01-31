@@ -1,0 +1,32 @@
+body{
+    background-color: #f6f5ee;
+}
+h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+}
+.nav_bar{
+    margin:50px 0px 0px 50px;
+    font-family: 'Space Grotesk', sans-serif;
+    
+    
+}
+a{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: none;
+    margin:auto 10px;
+    color:black;
+    transition: 0.02s;
+}
+a:hover{
+    color:#fdc400;
+    transform: scale(1.5);
+    margin: 0px 20px;
+}
+
+
+.About{
+    text-align: center;
+}
