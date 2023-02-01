@@ -18,15 +18,21 @@ a{
     text-decoration: none;
     margin:auto 10px;
     color:black;
-    transition: 0.02s;
+    transition: 0.5s;
 }
 a:hover{
     color:#fdc400;
-    transform: scale(1.5);
     margin: 0px 20px;
 }
 
 
 .About{
+    position: relative;
     text-align: center;
+}
+
+.activepage
+{
+    font-size: 40px;
+    margin:0px 50px;
 }
