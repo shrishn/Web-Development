@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe's Feedback Form</title>
+  </head>
+  <body>
+    <h1>Nike Shoes Review</h1>
+    <form action="/my-handling-form-page" method="post">
+      <fieldset>
+        <ul style="list-style-type: none">
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <br />
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <br />
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <br />
+        </ul>
+      </fieldset>
+      <br />
+      <fieldset>
+        <ol>
+          <li>
+            <label for="name"> Color of the Shoes :</label>
+            <input type="radio" value="Blue" />
+            <label>Blue</label>
+            <input type="radio" value="Red" />
+            <label>Red</label>
+            <input type="radio" value="Black" />
+            <label>Black</label>
+          </li>
+          <br />
+          <li>
+            <label for="name"> Size of the Shoes :</label>
+            <input type="radio" value="6" />
+            <label>6</label>
+            <input type="radio" value="7" />
+            <label>7</label>
+            <input type="radio" value="8" />
+            <label>8</label>
+            <input type="radio" value="9" />
+            <label>9</label>
+            <input type="radio" value="10" />
+            <label>10</label>
+          </li>
+          <br />
+          <li>
+            <label for="name"> Comfort of the Shoes :</label>
+            <input type="radio" value="Good" />
+            <label>Good</label>
+            <input type="radio" value="Average" />
+            <label>Average</label>
+            <input type="radio" value="Bad" />
+            <label>Bad</label>
+          </li>
+        </ol>
+      </fieldset>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
