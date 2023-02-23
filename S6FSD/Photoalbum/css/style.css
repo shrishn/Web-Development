@@ -1,5 +1,9 @@
-*{
-    border: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: contain;
 }
