@@ -1,5 +1,5 @@
+/* Submit Button Action */
 const form = document.querySelector('form');
-
 form.addEventListener('submit', function(event) {
   const input1 = form.querySelector('input[name="user_name"]');
   const input2 = form.querySelector('input[name="user_email"]');
@@ -11,7 +11,7 @@ form.addEventListener('submit', function(event) {
   }
 });
 
-
+/* Reset Button Function */
 form.addEventListener('reset', function() {
     const input1 = form.querySelector('input[name="user_name"]');
     const input2 = form.querySelector('input[name="user_email"]');
@@ -21,47 +21,41 @@ form.addEventListener('reset', function() {
   input3.value = '';
 });
 
+/* Invalid Input in Name Field */
 const nameInput = document.querySelector('input[name="user_name"]');
-
 nameInput.addEventListener('input', function() {
   const nameValue = nameInput.value;
   const regex = /^[a-zA-Z]+$/;
-  
   if (!regex.test(nameValue)) {
     alert('Invalid input');
     nameInput.value = '';
   }
 });
 
+/* Adding Three Fields to the form */
 const addButton = document.querySelector('#add-button');
-
-
 addButton.addEventListener('click', function() {
   const newRow = document.createElement('div');
   newRow.classList.add('form-row');
-  
   const nameInput = document.createElement('input');
   nameInput.setAttribute('type', 'text');
   nameInput.setAttribute('name', 'name');
   nameInput.setAttribute('placeholder', 'Name');
-  
   const userIdInput = document.createElement('input');
   userIdInput.setAttribute('type', 'text');
   userIdInput.setAttribute('name', 'user-id');
   userIdInput.setAttribute('placeholder', 'User ID');
-  
   const emailInput = document.createElement('input');
   emailInput.setAttribute('type', 'email');
   emailInput.setAttribute('name', 'email');
   emailInput.setAttribute('placeholder', 'Email ID');
-  
   newRow.appendChild(nameInput);
   newRow.appendChild(userIdInput);
   newRow.appendChild(emailInput);
-  
   form.appendChild(newRow);
 });
 
+/* Export Button Function */
 const exportButton = document.querySelector('#export-button');
 const nameInputs = document.querySelectorAll('input[name="user_name"]');
 const emailInputs = document.querySelectorAll('input[name="user_email"]');
@@ -91,12 +85,13 @@ exportButton.addEventListener('click', function() {
   URL.revokeObjectURL(url);
 });
 
+/* Clear Button Function */
 const clearButton = document.querySelector('#clear-button');
 
 clearButton.addEventListener('click', function() {
   const activeElement = document.activeElement;
 
-  if (activeElement.tagName === 'INPUT' && activeElement.type === 'text') {
+  if (activeElement.tagName == 'INPUT' && activeElement.type == 'text') {
     activeElement.value = '';
   }
 });
