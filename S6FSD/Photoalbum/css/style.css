@@ -7,3 +7,29 @@
 img {
   object-fit: contain;
 }
+#instagram-post {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+
+  padding: 20px;
+  text-align: center;
+}
+
+#main-page {
+  height: 2000px;
+  padding: 20px;
+  transition: filter 0.5s ease;
+  color: white;
+  background-color: black;
+}
+#main-page.blurred {
+  filter: blur(5px);
+  filter: brightness(0.5);
+}
+#main-page {
+}
