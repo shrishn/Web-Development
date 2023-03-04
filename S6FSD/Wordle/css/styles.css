@@ -1,0 +1,13 @@
+h1 {
+  margin-bottom: 0px;
+}
+.title {
+  font-family: "Gloock", serif;
+  word-spacing: 10px;
+}
+.line {
+  border: solid 1px;
+  height: 1px;
+  width: 50%;
+}
+
