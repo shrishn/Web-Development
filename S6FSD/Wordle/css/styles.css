@@ -1,13 +1,28 @@
-h1 {
-  margin-bottom: 0px;
-}
-.title {
-  font-family: "Gloock", serif;
-  word-spacing: 10px;
-}
-.line {
-  border: solid 1px;
-  height: 1px;
-  width: 50%;
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  filter: invert(100%);
 }
 
+.titlee {
+  font-family: "Gloock", serif;
+
+  font-size: 3rem !important;
+}
+.line {
+  border: solid 1px white;
+  height: 1px;
+  max-width: 400px;
+  min-width: 250px;
+}
+.userin {
+  aspect-ratio: 1/1;
+  font-family: 'Bebas Neue', cursive;
+  font-size: ;  
+}
+
+.board {
+  max-width: 400px;
+  min-width: 250px;
+}
