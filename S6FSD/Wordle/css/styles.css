@@ -18,8 +18,10 @@
 }
 .userin {
   aspect-ratio: 1/1;
-  font-family: 'Bebas Neue', cursive;
-  font-size: ;  
+  font-family: "Bebas Neue", cursive;
+  line-height: 100%;
+  font-size: xxx-large;  
+  text-align: center;
 }
 
 .board {
