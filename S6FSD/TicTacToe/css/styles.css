@@ -1,20 +1,17 @@
-*{
+* {
   box-sizing: border-box;
-  padding: 1px;
+  padding: 0px;
   margin: 0px;
 }
-.title
-{
-  font-family: 'Permanent Marker', cursive;
+.title {
+  font-family: "Permanent Marker", cursive;
   font-size: 4rem;
 }
-.board
-{   
-  width: 300px;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 2rem;
+.board {
+  margin: 100px auto;
+  width: 400px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 5rem;
 }
-.tile
-{
-  border:solid 1px black;
+.tile {
 }
