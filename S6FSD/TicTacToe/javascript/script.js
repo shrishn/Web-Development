@@ -1,6 +1,8 @@
+var stats = document.getElementsByClassName("status")[1];
 // Initialize board state as an array of empty strings
 let boardState = ["", "", "", "", "", "", "", "", ""];
-
+var player;
+stats.innerHTML = stats.innerHTML + " X's turn";
 // Function to update the board state and display the current player's mark
 function playOnClick(event) {
   const tileIndex = parseInt(event.target.getAttribute("data-index"));
@@ -17,12 +19,25 @@ function playOnClick(event) {
 
   // Update display of board
   event.target.innerHTML = currentPlayer;
+  console.log(currentPlayer);
+
+  if (currentPlayer == "X") {
+    player = "O";
+  } else {
+    player = "X";
+  }
+
+  stats.innerHTML = stats.innerHTML + " " + player + "'s turn";
 
   // Check for win or tie
   // ...
   const winner = checkWin(boardState);
   if (winner !== null) {
     console.log(winner);
+    for (let tile of tiles) {
+      tile.removeEventListener("click", playOnClick);
+    }
+    return;
   }
 }
 
