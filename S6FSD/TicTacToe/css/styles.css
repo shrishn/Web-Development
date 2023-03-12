@@ -5,13 +5,34 @@
 }
 .title {
   font-family: "Permanent Marker", cursive;
-  font-size: 4rem;
+  font-size: 3.4rem;
 }
 .board {
-  margin: 100px auto;
-  width: 400px;
+  max-width: 400px;
+  min-width: 250px;
+  width: 100%;
   font-family: "Permanent Marker", cursive;
   font-size: 5rem;
 }
+@media (max-width: 320px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 900px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 901px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
 .tile {
+  aspect-ratio: 1/1;
+  padding: 0rem;
 }
