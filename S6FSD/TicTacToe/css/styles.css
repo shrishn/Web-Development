@@ -20,15 +20,15 @@
   }
 }
 
-@media (min-width: 321px) and (max-width: 900px) {
+@media (min-width: 331px) and (max-width: 900px) {
   .title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
 @media (min-width: 901px) {
   .title {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
