@@ -20,6 +20,10 @@ function playOnClick(event) {
 
   // Check for win or tie
   // ...
+  const winner = checkWin(boardState);
+  if (winner !== null) {
+    console.log(winner);
+  }
 }
 
 // Attach click event listeners to all tiles
@@ -44,12 +48,14 @@ function checkWin(board) {
   for (let i = 0; i < winningPositions.length; i++) {
     const [a, b, c] = winningPositions[i];
     if (board[a] && board[a] === board[b] && board[b] === board[c]) {
+      tiles[a].style.backgroundColor = "#30cf7f";
+      tiles[b].style.backgroundColor = "#30cf7f";
+      tiles[c].style.backgroundColor = "#30cf7f";
       return board[a];
     }
   }
 
   return null;
 }
-const board = ["X", null, "O", "X", "O", null, null, null, null];
-const winner = checkWin(board);
-console.log(winner); // should output null, since no player has won yet
+
+// should output null, since no player has won yet
