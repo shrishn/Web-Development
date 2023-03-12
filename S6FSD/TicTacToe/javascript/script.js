@@ -1,8 +1,15 @@
-let lastClicked = null;
+let counter = 0;
 
-document.querySelectorAll(".tile").forEach((tile) => {
-  tile.addEventListener("click", (event) => {
-    event.target.innerHTML = "x"; // set text in clicked tile
-    
-  });
-});
+function playOnClick(event) {
+  const clickedTile = event.target;
+  if (clickedTile.textContent !== "") {
+    return;
+  }
+  counter++;
+  clickedTile.textContent = counter % 2 === 0 ? "0" : "x";
+}
+
+const tiles = document.getElementsByClassName("tile");
+for (let i = 0; i < tiles.length; i++) {
+  tiles[i].addEventListener("click", playOnClick);
+}
